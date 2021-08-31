@@ -1,3 +1,4 @@
+/*
 let bici =[
     {
         nome:"ciao",
@@ -29,3 +30,59 @@ for(let i in bici){
 const {nome,peso} = temp;
 console.log(`${peso},${nome} 
 ciao`);
+
+*/
+
+let squadre=[
+    {
+        nome:"napoli",
+        puntifatti:0,
+        fallisubiti:0
+    },
+    {
+        nome:"juve",
+        puntifatti:0,
+        fallisubiti:0
+    },
+    {
+        nome:"milan",
+        puntifatti:0,
+        fallisubiti:0
+    },
+    {
+        nome:"inter",
+        puntifatti:0,
+        fallisubiti:0
+    },
+    {
+        nome:"lazio",
+        puntifatti:0,
+        fallisubiti:0
+    },
+    {
+        nome:"roma",
+        puntifatti:0,
+        fallisubiti:0
+    },
+    {
+        nome:"bologna",
+        puntifatti:0,
+        fallisubiti:0
+    },
+]
+random();
+let narray=[]
+for(let i in squadre){
+    let {nome,fallisubiti} = squadre[i];
+    narray.push({
+        nome,
+        fallisubiti
+    })
+}
+console.log(narray);
+function random(){
+    for(let i in squadre){
+        squadre[i].fallisubiti=Math.floor(Math.random()*100)+1;
+        squadre[i].puntifatti=Math.floor(Math.random()*100)+1;
+    }
+}
