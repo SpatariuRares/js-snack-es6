@@ -1,4 +1,4 @@
-
+/*
 let bici =[
     {
         nome:"ciao",
@@ -20,8 +20,8 @@ let bici =[
         nome:"as",
         peso:7
     },
-] 
-
+] */
+/*
 const temp = (bici) => {
     let v=bici[0];
     for(let i in bici){
@@ -31,7 +31,7 @@ const temp = (bici) => {
     }
     return v;
 }
-console.log(temp(bici));
+console.log(temp(bici));*/
 /*
 let temp=bici[0];
 for(let i in bici){
@@ -99,3 +99,13 @@ function random(){
     }
 }
 */
+
+let array1=[1,2,3,4,5,6,7,8,9,10];
+let a=4;
+let b=6;
+
+const array2 = array1.filter((element,index) => {
+    if(index>=a && index<=b) return true;
+    return false;
+});
+console.log(array2);
