@@ -99,13 +99,29 @@ function random(){
     }
 }
 */
-
-let array1=[1,2,3,4,5,6,7,8,9,10];
-let a=4;
-let b=6;
+let max=100
+let array1=[];
+let a=random(max,1);
+let b=random(max,1);
+if(a>b) {
+    let temp=a;
+    a=b;
+    b=temp;
+}
+for(let i=0;i=random(max,1);i++){
+    array1.push(random(max,1));
+}
+if(b>=array1.length){
+    b=array1.length-1;
+}
 
 const array2 = array1.filter((element,index) => {
     if(index>=a && index<=b) return true;
     return false;
 });
 console.log(array2);
+
+
+function random(max,min){
+    return Math.floor(Math.random()*max-1)+min
+}
