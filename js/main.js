@@ -1,4 +1,4 @@
-/*
+
 let bici =[
     {
         nome:"ciao",
@@ -20,7 +20,19 @@ let bici =[
         nome:"as",
         peso:7
     },
-]
+] 
+
+const temp = (bici) => {
+    let v=bici[0];
+    for(let i in bici){
+        if(bici[i].peso<v.peso){
+            v=bici[i];
+        }
+    }
+    return v;
+}
+console.log(temp(bici));
+/*
 let temp=bici[0];
 for(let i in bici){
     if(bici[i].peso<temp.peso){
@@ -30,9 +42,9 @@ for(let i in bici){
 const {nome,peso} = temp;
 console.log(`${peso},${nome} 
 ciao`);
-
 */
 
+/*
 let squadre=[
     {
         nome:"napoli",
@@ -86,3 +98,4 @@ function random(){
         squadre[i].puntifatti=Math.floor(Math.random()*100)+1;
     }
 }
+*/
