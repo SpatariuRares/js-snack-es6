@@ -99,7 +99,7 @@ function random(){
     }
 }
 */
-let max=100
+let max=10000
 let array1=[];
 let a=random(max,1);
 let b=random(max,1);
@@ -108,7 +108,8 @@ if(a>b) {
     a=b;
     b=temp;
 }
-for(let i=0;i=random(max,1);i++){
+let c=random(max,1);
+for(let i=0;i<c ;i++){
     array1.push(random(max,1));
 }
 if(b>=array1.length){
