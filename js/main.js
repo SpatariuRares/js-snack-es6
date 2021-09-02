@@ -108,6 +108,7 @@ if(a>b) {
     a=b;
     b=temp;
 }
+
 let c=random(max,1);
 for(let i=0;i<c ;i++){
     array1.push(random(max,1));
